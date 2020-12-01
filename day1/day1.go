@@ -21,11 +21,6 @@ func part1(input [][]int) (rc int) {
 				return input[i][0] * input[j][0]
 			}
 		}
-		// for j := i; j < len(input); j++ {
-		// 	if input[i][0]+input[j][0] == 2020 {
-		// 		return input[i][0] * input[j][0]
-		// 	}
-		// }
 	}
 	return
 }
