@@ -6,7 +6,6 @@ import (
 	"regexp"
 	"strconv"
 	"strings"
-
 	"github.com/irhtml/aoc2020/lib/inputs"
 )
 

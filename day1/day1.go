@@ -15,8 +15,12 @@ func main() {
 }
 
 func part1(input [][]int) (rc int) {
-	for i := 0; i < len(input)-1; i++ {
-		println(input[i][0])
+	for i := 0; i < len(input); i++ {
+		for j := i + 1; j < len(input); j++ {
+			if input[i][0]+input[j][0] == 2020 {
+				return input[i][0] * input[j][0]
+			}
+		}
 		// for j := i; j < len(input); j++ {
 		// 	if input[i][0]+input[j][0] == 2020 {
 		// 		return input[i][0] * input[j][0]
